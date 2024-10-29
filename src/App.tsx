@@ -95,7 +95,7 @@ export function TodoPage() {
                 className="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                 onChange={() => {
                   if (todo) {
-                    handleToggleTodo(todo.id, todo.marcado)
+                    handleToggleTodo(todo?.id ?? '', todo?.marcado ?? false)
                   }
                 }}
               />
